@@ -11,6 +11,13 @@ html{
 .menu{
     display: none;
 }
+.imgBack{
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 70vh;
+    z-index: -10;
+}
 
 header{
     position: fixed;
@@ -73,9 +80,17 @@ a{
     display: flex;
     margin-top: 1000px;
 }
+.welcome{
+    position: absolute;
+    top: 70px;
+    left: 200px;
+}
+
 .bienvenido{
+    color: white;
+    z-index: 80;
     display: block;
-    font-size: 50px;
+    font-size: 30px;
     font-family:lucida console;
     white-space: nowrap;
     border-right: 4px solid;
@@ -101,6 +116,7 @@ a{
    
 }
 .bienvenido2{
+    color: white;
     position: absolute;
     left: 0px;
     font-size: 50px;
@@ -216,7 +232,7 @@ p{
     }
     
 }
-@media screen and  (max-width: 750px){
+@media all and  (max-width: 750px){
 
     .menu{
         display: block;
@@ -231,7 +247,7 @@ p{
         height: 40vh;
         z-index: 2;
     }
-    .bienvenido{
+    span{
         font-size: 20px!important;
     }
     .menuimg{
