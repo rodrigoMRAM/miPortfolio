@@ -13,7 +13,7 @@ html{
 }
 .imgBack{
     display: flex;
-    background-color: rgb(37, 37, 37);
+    background-image: linear-gradient(rgb(44, 3, 97),rgb(47, 4, 58));
     width: 100%;
     height: 70vh;
     z-index: -10;
@@ -46,7 +46,78 @@ nav{
     position: absolute;
     top: 60px;
 }
-
+.globo{
+    position: absolute;
+    top: 200px;
+    right: 50%;
+    animation: globojs;
+    animation-duration: 5s;
+}
+.globo1{
+    position: absolute;
+    top: 240px;
+    right: 60%;
+    animation: globohtml;
+    animation-duration: 5.2s;
+}
+.globo2{
+    position: absolute;
+    top: 240px;
+    right: 40%;
+    animation: globocss;
+    animation-duration: 5.4s;
+}
+.globo3{
+    position: absolute;
+    top: 350px;
+    right: 50%;
+    animation: globopython;
+    animation-duration: 5.8s;
+}
+@keyframes globojs {
+    0%{
+        position: absolute;
+        top: 400px;
+    
+    }
+    100%{
+        top:200px;
+    }
+    
+}
+@keyframes globocss {
+    0%{
+        position: absolute;
+        top: 500px;
+    
+    }
+    100%{
+        top:240px;
+    }
+    
+}
+@keyframes globohtml {
+    0%{
+        position: absolute;
+        top: 600px;
+    
+    }
+    100%{
+        top:240px;
+    }
+    
+}
+@keyframes globopython {
+    0%{
+        position: absolute;
+        top: 600px;
+    
+    }
+    100%{
+        top:350px;
+    }
+    
+}
 
 li{
     display: flex;
@@ -90,7 +161,7 @@ a{
     color: white;
     z-index: 80;
     display: block;
-    font-size: 30px;
+    font-size: 40px;
     font-family:lucida console;
     white-space: nowrap;
     border-right: 4px solid;
@@ -248,10 +319,15 @@ p{
         z-index: 2;
     }
     span{
-        font-size: 20px!important;
+        font-size: 30px!important;
     }
     .menuimg{
         width: 40px;
+    }
+    .welcome{
+        position: absolute;
+        top: 100px;
+        left: 30px;
     }
     nav{
         display: none;
