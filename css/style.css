@@ -2,8 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Arial', Times, serif;
+
     white-space: 20px;
+}
+@font-face {
+    font-family: Antonio;
+    src: url(Antonio.ttf);
 }
 
 .menu{
