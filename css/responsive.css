@@ -9,9 +9,20 @@
 .container{
     display: flex;
     margin-top: 200px;
+    z-index: 60;
 }
 .separador{
     width: 276px;
+}
+.p3{
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    width: 50px;
+}
+.datos{
+    
+    width: 200px;
 }
 
     .container, .ticket{

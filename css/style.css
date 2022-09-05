@@ -368,7 +368,7 @@ p{
     margin-top: 20px;
     box-shadow: 0 0 40px rgba(0, 0, 0, .7);
     border: 2px solid rgba(0, 153, 255, 0.435);
-    background-image: linear-gradient(rgba(44, 3, 97,0.7),rgba(47, 4, 58,0.7));
+    background-image: linear-gradient(rgb(89, 30, 165),rgb(105, 0, 131));
     width: 600px;
     aspect-ratio: 18/9;
     border-radius: 6px;
@@ -395,18 +395,14 @@ bg{
     height: 100%;
 
 }
-.imagen{
- 
-}
-
-.imagen img{
+.rodrigo{
     position: absolute;
     top: 30px;
     left: 20px;
     margin-left: 10px;
     margin-top: 10px;
-    height: 60px;
-    width: 60px;
+    height: 60px!important;
+    width: 60px!important;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -414,7 +410,7 @@ bg{
     position: absolute;
     top: 30px;
     left: 100px;
-    width: 200px;
+    width: 250px;
     height: 50px;
     margin-top: 20px;
 }
@@ -438,4 +434,34 @@ bg{
     bottom: 80px;
     width: 576px;
     height: 20px;
+}
+.red,.red1,.red2{
+    width: 30px !important;
+    height: 30px!important;
+}
+.red{
+    left: 30px;
+    bottom: 30px;
+}
+.red1{
+    bottom: 30px;
+    left: 80px;
+}
+.red2{
+    bottom: 30px;
+    left: 130px;
+}
+.javascript{
+    width: 200px;
+    height: 200px!important;
+    opacity: 20%;
+    position: absolute;
+    right: 0!important;
+    top: 20px;
+}
+
+.p3{
+    position: absolute;
+    top: 85px;
+    left: 100px;
 }
