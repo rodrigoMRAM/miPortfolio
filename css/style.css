@@ -355,3 +355,87 @@ p{
     text-align: center;
     font-size: 12px;
 }
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket{
+  
+    margin-top: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .7);
+    border: 2px solid rgba(0, 153, 255, 0.435);
+    background-image: linear-gradient(rgba(44, 3, 97,0.7),rgba(47, 4, 58,0.7));
+    width: 600px;
+    aspect-ratio: 18/9;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+
+    border: 2px solid rgba(0, 153, 255, 0.435);
+    width: 580px;
+    height: 280px;
+    border-radius: 6px;
+}
+h1{
+    font-size: 20px;
+}
+bg{
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    filter: blur(20px);
+    width: 100%;
+    height: 100%;
+
+}
+.imagen{
+ 
+}
+
+.imagen img{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.datos{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+}
+.datos p{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.imagen h1{
+    color: white;
+    position: absolute;
+    right: 15px;
+    bottom: 90px;
+    font-size: 40px;
+    font-weight: 900;
+    z-index: 200;
+
+}
+.separador{
+    background-color: rgba(0, 153, 255, 0.435);
+    position: absolute;
+    bottom: 80px;
+    width: 576px;
+    height: 20px;
+}

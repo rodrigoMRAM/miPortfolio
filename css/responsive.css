@@ -6,7 +6,22 @@
 
 
 @media all and  (max-width: 750px){
+.container{
+    display: flex;
+    margin-top: 200px;
+}
+.separador{
+    width: 276px;
+}
 
+    .container, .ticket{
+        width: 300px;
+        height: 600px;
+    }
+    .border{
+        width: 280px;
+        height: 580px;
+    }
     .menu{
         display: block;
         position: absolute;

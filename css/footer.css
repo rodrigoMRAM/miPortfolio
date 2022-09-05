@@ -1,0 +1,16 @@
+
+.footerm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 300px;
+    background-image: linear-gradient(rgb(44, 3, 97),rgb(47, 4, 58));
+}
+.footerm p{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+
