@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
@@ -18,9 +16,9 @@
             <div class="vacio"></div>
             <div class="lista">
                 <li><a href="">Inicio</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="ticket.html">About me</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#container">About me</a></li>
+                <li><a href="#formularios">Contacto</a></li>
                 <div class="misredes">
                     <a href="https://github.com/rodrigoMRAM"><img class="redes" src="img/git.png" alt=""></a>
                     <a class="aimagen" href="https://www.linkedin.com/in/rodrigo-alberto-maciel-15673b243/"><img
@@ -42,9 +40,9 @@
         <img src="img/hac.png" alt="" srcset="">
                     
     </div>
-    <div class="welcome"><span class="bienvenido">Bienvenido a mi Portfolio</span>
-      <span class="bienvenido2">Soy Rodrigo Maciel</span><br>
-      <span class="bienvenido2">Web Developer</span>
+    <div class="welcome"><div class="bienvenido">Bienvenido a mi Portfolio</div>
+      <div class="bienvenido2 span1">Soy Rodrigo Maciel</div><br>
+      <div class="bienvenido2 span2">Web Developer</div>
       <div></div>
   
   </div>
@@ -52,24 +50,81 @@
     <img class="globo1" src="img/htmlglobo.png" alt="" width="60px">
     <img class="globo2"src="img/cssglobo.png" alt="" width="60px">
     <img class="globo3"src="img/pythonglobo.png" alt="" width="60px"></div>
-
-
-    <div class="conocimientos">
-        <h4>Mis conocimientos</h4>
-        <div class="lenguajes">
-            <img src="img/html.png" alt="">
-            <img src="img/css.png" alt="">
-            <img src="img/javascript.png" alt="">
+    
+    <div class="contenedorskil" id="skills">
+        <h4 class="skil">Skills</h4>
+        <div class="skills" >
+        
+            <div class="lenguajes1">
+                <div class="leng1">
+                    <img src="img/html.png" alt="">
+                    <p>Html</p>
+                </div>
+                <div class="leng2">
+                    <img src="img/css.png" alt="">
+                    <p>Css</p>
+                </div>
+                <div class="leng3">
+                    <img src="img/javascript.png" alt="">
+                    <p>Javascript</p>
+                </div>
+            
+            </div>
+      
             <div class="lenguajes">
-                <img src="img/python.png" alt="">
-                <img src="img/github2.png" alt="">
-                <img src="img/Bootstrap.png" alt="">
+                <div class="leng4">   
+                     <img src="img/python.png" alt="">
+                     <p>Python</p>
+                </div>
+                <div class="leng5"> 
+                    <img src="img/github.png" alt="">
+                    <p>Github</p>
+                </div>
+                <div class="leng6">
+                    <img src="img/Bootstrap.png" alt="">
+                    <p>Bootstrap</p>
+                </div>
+                
             </div>
         </div>
     </div>
+    
+    <div class="container-slide" id="container">
+        <h4 class="about">About me</h4>
+    <div class="imgCard">
+        
+        <div class="container">
+            <div class="wrapper">
+                <div class="ticket">
+                    <div class="border">
+                    <div class="imagen">
+                        <img class="rodrigo" src="img/persona.png" alt="">
+                        
+                        <h1>Web Developer</h1>
+                        <div class="separador"><p>Mis Redes</p></div>
+    
+                            <a href="https://github.com/rodrigoMRAM"><img class="red" src="img/git.png" alt=""></a>
+                            <a class="aimagen" href="https://www.linkedin.com/in/rodrigo-alberto-maciel-15673b243/"><img class="red1" src="img/linkedin.png" alt=""></a>
+                            <a href=""><img class="red2" src="img/icono.png" alt=""></a>
+                            <img class="javascript" src="img/javascript.png" alt="">
+                    </div>
+                    <div class="datos">
+                        <p class="p1">Rodrigo Alberto Maciel</p>
+                        <p class="p2"> 29 años</p> 
+                       
+    
+                    </div>
+                    <p class="p3">Email: rodrigomacielth@gmail.com</p>
+                    <div class="bg"></div>
+                   
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-    <div class="formularios">
+    <div class="formularios" id="formularios">
         <h2>Contactame</h2>
         <div class="mb-3 formulario">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
@@ -90,7 +145,16 @@
             <p>Rodrigo Maciel 2022</p>
         </div>
     </footer>
-
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container"), {
+            max: 15,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".container"));
+    </script>
     <script src="js/navbar.js"></script>
     <script src="js/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
