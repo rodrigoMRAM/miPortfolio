@@ -33,7 +33,7 @@ window.addEventListener('scroll',()=>{
     const scrolled = window.scrollY;
     const ancho = window.innerWidth
     const val = (scrolled*0.7)-488;
-    const val2 = (scrolled*0.2)-488;
+    const val2 = (scrolled*0.22)-488;
     if(scrolled>500 && scrolled<1100 && ancho> 500){
         about.style.transform = `translateX(${1*val}%)`;
         
@@ -41,11 +41,11 @@ window.addEventListener('scroll',()=>{
     if(scrolled == 500 && ancho> 500){
         about.style.transform = `translateX(488%)`;
     }
-    if(scrolled>2800 && ancho< 500){
-        about.style.transform = `translateX(${(1*val2)-10}%)`;
+    if(scrolled>2500 && ancho< 500){
+        about.style.transform = `translateX(${(val2)}%)`;
         console.log(scrolled)
     }
-    if(scrolled>3300 && ancho< 500){
+    if(scrolled>3100 && ancho< 500){
         about.style.transform = `translateX(200%)`;
     }
 })
