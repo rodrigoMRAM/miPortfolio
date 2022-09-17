@@ -3,85 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/footer.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="">
-        <nav class="">
-            <div class="vacio"></div>
-            <div class="lista">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">About me</a></li>
-                <li><a href="">Contacto</a></li>
-                <div class="misredes">
-                    <a href="https://github.com/rodrigoMRAM"><img class="redes" src="img/git.png" alt=""></a>
-                    <a class="aimagen" href="https://www.linkedin.com/in/rodrigo-alberto-maciel-15673b243/"><img
-                            class="redes" src="img/linkedin.png" alt=""></a>
-                    <a href=""><img class="redes" src="img/icono.png" alt=""></a>
+    <div class="container1">
+
+        <!-- Container that the cards slide across -->
+        <div class="carousel-container">
+    
+            <!-- Replacable cards -->
+            <div class="card">
+                <div class="card-img card-img1">
+                    <img src="img/html.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Html</h2>
                 </div>
             </div>
-            <div class="ingresar">
-                <li><a href="">Ingresar</a></li>
+    
+            <div class="card">
+                <div class="card-img card-img2">
+                    <img src="img/css.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Css</h2>
+                </div>
             </div>
-        </nav>
-        <div class="menu">
-            <img class="menu" src="img/menu.png" alt="">
+    
+            <div class="card">
+                <div class="card-img card-img3">
+                   <img src="img/javascript.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Javascript</h2>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img card-img4">
+                    <img src="img/python.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Python</h2>
+                </div>
+
+            </div>
+    
+            <div class="card">
+                <div class="card-img card-img5">
+                    <img src="img/github.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Github</h2>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img card-img6">
+                    <img src="img/Bootstrap.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Bootstrap</h2>
+                </div>
+            </div>
         </div>
-
-    </header>
-    <div class="imgCard">
-    <div class="container">
-        <div class="wrapper">
-            <div class="ticket">
-                <div class="border">
-                <div class="imagen">
-                    <img class="rodrigo" src="img/persona.png" alt="">
-                    
-                    <h1>Web Developer</h1>
-                    <div class="separador"><p>Mis Redes</p></div>
-
-                        <a href="https://github.com/rodrigoMRAM"><img class="red" src="img/git.png" alt=""></a>
-                        <a class="aimagen" href="https://www.linkedin.com/in/rodrigo-alberto-maciel-15673b243/"><img class="red1" src="img/linkedin.png" alt=""></a>
-                        <a href=""><img class="red2" src="img/icono.png" alt=""></a>
-                        <img class="javascript" src="img/javascript.png" alt="">
-                </div>
-                <div class="datos">
-                    <p class="p1">Rodrigo Alberto Maciel</p>
-                    <p class="p2"> 29 años</p> 
-                   
-
-                </div>
-                <p class="p3">Email: rodrigomacielth@gmail.com</p>
-                <div class="bg"></div>
-               
-            </div>
+    
+        <!-- Buttons to adjust card position -->
+        <div class="prev-cont card-mover-btn">
+            <button class="prev btn">&#60;</button>
         </div>
+        <div class="next-cont card-mover-btn">
+            <button class="next btn">&#62;</button>
         </div>
     </div>
-
-</div>
-
-    <footer>
-        <div class="footerm">
-            <p>Rodrigo Maciel 2022</p>
-        </div>
-    </footer>
-    <script src="js/navbar.js"></script>
-    <script src="js/nav.js"></script>
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".container"), {
-            max: 15,
-            speed: 400
-        });
-        
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll(".container"));
-    </script>
-    </body>
+    
+    <script src="js/carousel.js"></script>
+</body>
 </html>
+<!-- Container for the layout of the full carousel -->

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
 </head>
 
@@ -16,7 +17,7 @@
             <div class="vacio"></div>
             <div class="lista">
                 <li><a href="">Inicio</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="">Skills</a></li>
                 <li><a href="#container">About me</a></li>
                 <li><a href="#formularios">Contacto</a></li>
                 <div class="misredes">
@@ -30,67 +31,101 @@
                 <li><a href="">Ingresar</a></li>
             </div>
         </nav>
-        <div class="menu">
-            <img class="menu" src="img/menu.png" alt="">
-        </div>
+        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="60" height="60" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
 
     </header>
 
-    <div class="imgBack">
-        <img src="img/hac.png" alt="" srcset="">
-                    
-    </div>
-    <div class="welcome"><div class="bienvenido">Bienvenido a mi Portfolio</div>
-      <div class="bienvenido2 span1">Soy Rodrigo Maciel</div><br>
-      <div class="bienvenido2 span2">Web Developer</div>
-      <div></div>
-  
+
+    <div class="welcome">
+        <h1 class="bienvenido">Bienvenido a mi Portfolio</h1>
+        <h2>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Bienvenido a mi Porfolio", "Soy Rodrigo Maciel", "Web Developer" ]'>
+            <span class="wrap"></span>
+          </a>
+        </h2>
   </div>
-  <div class="misglobos">  <img class="globo" src="img/jsglobo.png" alt="" width="60px">
+
+  <!-- <div class="misglobos">  <img class="globo" src="img/jsglobo.png" alt="" width="60px">
     <img class="globo1" src="img/htmlglobo.png" alt="" width="60px">
     <img class="globo2"src="img/cssglobo.png" alt="" width="60px">
-    <img class="globo3"src="img/pythonglobo.png" alt="" width="60px"></div>
-    
-    <div class="contenedorskil" id="skills">
-        <h4 class="skil">Skills</h4>
-        <div class="skills" >
-        
-            <div class="lenguajes1">
-                <div class="leng1">
-                    <img src="img/html.png" alt="">
-                    <p>Html</p>
+    <img class="globo3"src="img/pythonglobo.png" alt="" width="60px"></div> -->
+    <span class="skil">Skills</span>
+    <div class="container1" id="container1">
+        <div class="gatillo"></div>
+        <!-- Container that the cards slide across -->
+        <!-- Replacable cards -->
+        <div class="tcards" id="tcards">
+            <div class="card">
+                <div class="card-img card-img1">
+                    <img src="img/html.png" alt="" srcset="">
                 </div>
-                <div class="leng2">
-                    <img src="img/css.png" alt="">
-                    <p>Css</p>
+                <div class="card-title">
+                    <h2>Html</h2>
                 </div>
-                <div class="leng3">
-                    <img src="img/javascript.png" alt="">
-                    <p>Javascript</p>
-                </div>
-            
             </div>
-      
-            <div class="lenguajes">
-                <div class="leng4">   
-                     <img src="img/python.png" alt="">
-                     <p>Python</p>
+    
+            <div class="card">
+                <div class="card-img card-img2">
+                    <img src="img/css.png" alt="" srcset="">
                 </div>
-                <div class="leng5"> 
-                    <img src="img/github.png" alt="">
-                    <p>Github</p>
+                <div class="card-title">
+                    <h2>Css</h2>
                 </div>
-                <div class="leng6">
-                    <img src="img/Bootstrap.png" alt="">
-                    <p>Bootstrap</p>
+            </div>
+    
+            <div class="card">
+                <div class="card-img card-img3">
+                    <img src="img/javascript.png" alt="" srcset="">
                 </div>
-                
+                <div class="card-title">
+                    <h2>Javascript</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="tcards2" id="tcards2">
+            <div class="card">
+                <div class="card-img card-img4">
+                    <img src="img/python.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Python</h2>
+                </div>
+    
+            </div>
+    
+            <div class="card">
+                <div class="card-img card-img5">
+                    <img src="img/github.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Github</h2>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img card-img6">
+                    <img src="img/Bootstrap.png" alt="" srcset="">
+                </div>
+                <div class="card-title">
+                    <h2>Bootstrap</h2>
+                </div>
             </div>
         </div>
     </div>
     
+            
+
+    
     <div class="container-slide" id="container">
         <h4 class="about">About me</h4>
+        <div class="gatillo"></div>
     <div class="imgCard">
         
         <div class="container">
@@ -145,6 +180,9 @@
             <p>Rodrigo Maciel 2022</p>
         </div>
     </footer>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/typewritter.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".container"), {
@@ -156,16 +194,30 @@
         VanillaTilt.init(document.querySelectorAll(".container"));
     </script>
     <script src="js/navbar.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    </script>
+<script>
+    new ScrollMagic.Scene({
+                        triggerElement: "#tcards",
+                        offset: 50,											
+                        triggerHook: 0.9,
+                    })
+                    .setClassToggle("#tcards", "visible")
+                    .addTo(controller);
+
+</script>
+<script>
+    new ScrollMagic.Scene({
+                        triggerElement: "#tcards2",
+                        offset: 50,											
+                        triggerHook: 0.9,
+                    })
+                    .setClassToggle("#tcards2", "visible")
+                    .addTo(controller);
+
+</script>
 
 </body>
 
