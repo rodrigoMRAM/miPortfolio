@@ -14,7 +14,6 @@
 <body>
     <header class="">
         <nav class="">
-            <div class="vacio"></div>
             <div class="lista">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Skills</a></li>
@@ -27,9 +26,7 @@
                     <a href=""><img class="redes" src="img/icono.png" alt=""></a>
                 </div>
             </div>
-            <div class="ingresar">
-                <li><a href="">Ingresar</a></li>
-            </div>
+           
         </nav>
         <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
             <svg width="60" height="60" viewBox="0 0 100 100">
@@ -55,9 +52,12 @@
     <img class="globo1" src="img/htmlglobo.png" alt="" width="60px">
     <img class="globo2"src="img/cssglobo.png" alt="" width="60px">
     <img class="globo3"src="img/pythonglobo.png" alt="" width="60px"></div> -->
-    <span class="skil">Skills</span>
+   
+    <div class="gatillo"></div>
+    <div class="divslide"><span class="skil" id="skil">Skills</span></div>
+    
     <div class="container1" id="container1">
-        <div class="gatillo"></div>
+       
         <!-- Container that the cards slide across -->
         <!-- Replacable cards -->
         <div class="tcards" id="tcards">
@@ -124,7 +124,7 @@
 
     
     <div class="container-slide" id="container">
-        <h4 class="about">About me</h4>
+        <h4 class="about" id="about">About me</h4>
         <div class="gatillo"></div>
     <div class="imgCard">
         
@@ -144,7 +144,7 @@
                             <img class="javascript" src="img/javascript.png" alt="">
                     </div>
                     <div class="datos">
-                        <p class="p1">Rodrigo Alberto Maciel</p>
+                        <p class="p1">Rodrigo Maciel</p>
                         <p class="p2"> 29 años</p> 
                        
     
@@ -158,18 +158,15 @@
         </div>
     </div>
 </div>
-
+<h2 class="contactame" id="contactame">Contactame</h2>
     <div class="formularios" id="formularios">
-        <h2>Contactame</h2>
-        <div class="mb-3 formulario">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@mail.com">
+       
+        <div class="contacto">
+            <a href="https://github.com/rodrigoMRAM"><img class="" src="img/git.png" alt="" width="100px"></a>
+            <a class="" href="https://www.linkedin.com/in/rodrigo-alberto-maciel-15673b243/">   <img class="" src="img/linkedin.png" alt="" width="100px"> </a>
+            <a href="" ><img class="" src="img/icono.png" alt="" width="100px"> </a>
         </div>
-        <div class="mb-3 formulario">
-            <label for="exampleFormControlTextarea1" class="form-label">Contactame</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <input class="enviar text-center" type="button" value="Enviar">
-        </div>
+        
 
     </div>
 
@@ -215,6 +212,37 @@
                         triggerHook: 0.9,
                     })
                     .setClassToggle("#tcards2", "visible")
+                    .addTo(controller);
+
+</script>
+
+<script>
+    new ScrollMagic.Scene({
+                        triggerElement: "#skil",
+                        offset: 50,											
+                        triggerHook: 0.9,
+                    })
+                    .setClassToggle("#skil", "visible")
+                    .addTo(controller);
+
+</script>
+<script>
+    new ScrollMagic.Scene({
+                        triggerElement: "#about",
+                        offset: 50,											
+                        triggerHook: 0.9,
+                    })
+                    .setClassToggle("#about", "visible")
+                    .addTo(controller);
+
+</script>
+<script>
+    new ScrollMagic.Scene({
+                        triggerElement: "#contactame",
+                        offset: 50,											
+                        triggerHook: 0.9,
+                    })
+                    .setClassToggle("#contactame", "visible")
                     .addTo(controller);
 
 </script>
