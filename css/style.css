@@ -218,11 +218,12 @@ a{
     animation: bienvenido 1s;
 }
 .bienvenido:hover{
-    transition: all 1s;
-    color: #A07BFF;
-    transform: scale(1.5);
+    transition: all 1s!important;
+    color: #A07BFF!important;
+    transform: scale(1.5)!important;
 
 }
+
 
 .span1{
     margin-top: 50px;

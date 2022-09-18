@@ -1,11 +1,6 @@
-const menu = document.querySelector('.menu');
-const nav = document.querySelector('nav');
-const opened = document.querySelector('.opened');
+const bienvenido = document.querySelector('.bienvenido');
 
-
-opened.addEventListener('click', ()=>{
-    let valor = opened.classList.contains('opened')
-    if(valor){
-       nav.classList.toggle('habi')
-    }
+bienvenido.addEventListener('mouseout', ()=>{
+    bienvenido.style.transition = "transform 1s"
+    bienvenido.style.transform = "scale(1)"
 })

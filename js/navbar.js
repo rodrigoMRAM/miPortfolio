@@ -13,10 +13,6 @@ window.addEventListener('scroll',()=>{
     nav.classList.toggle('abajo1', window.scrollY<25)
 })
 
-window.addEventListener('click',(event)=>{
-    console.log(event.clientY)
-})
-
 menu.addEventListener('click', ()=>{
     nav.classList.toggle('habilitado');
     header.classList.toggle('habilitacion')
@@ -26,11 +22,11 @@ body.addEventListener('click',(event)=>{
         clienteY = event.clientY;
         if (clienteY>499) {
             nav.classList.remove('habilitado')
-            menu.classList.remove('opened')
-            console.log(about)
-            
+            menu.classList.remove('opened')          
         }
         
   
 })  
+
+
 
