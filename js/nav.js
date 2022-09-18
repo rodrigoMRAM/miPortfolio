@@ -1,8 +1,11 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('nav');
+const opened = document.querySelector('.opened');
 
 
-menu.addEventListener('click', ()=>{
-    nav.classList.toggle('habilitado');
+opened.addEventListener('click', ()=>{
+    let valor = opened.classList.contains('opened')
+    if(valor){
+       nav.classList.toggle('habi')
+    }
 })
-

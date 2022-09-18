@@ -130,6 +130,23 @@
         z-index: 70;
 
     }
+    .habilitado2{
+        display: block;
+        background-color: black;
+        height: 500px;
+        animation: lista2;
+        animation-duration: 1s;
+        z-index: 70;
+
+    }
+    @keyframes lista2 {
+        0%{
+            height: 500px;
+        }
+        100%{
+            height: 50px;
+        }
+    }
     .contenedorskil{
         margin-top: 300px;
     }
@@ -179,7 +196,9 @@
         }
         
     }
-
+.card{
+    width: 100%!important;
+}
     .skills{
         display: flex;
         text-align: center;
@@ -202,6 +221,7 @@
     }
 
     .imgCard{
+        
         box-shadow: none;
         background: none;
 
