@@ -43,7 +43,7 @@
     }
     .menu{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 1px;
         right: 55px;
         z-index: 200;
@@ -97,9 +97,9 @@
         z-index: 60;
     }
     .bienvenido:hover{
-        transition: all 1s;
-        color: #A07BFF;
-        transform: scale(1.2);
+        transition: all 1s!important;
+        color: #A07BFF!important;
+        transform: scale(1.1,1.3)!important;
     
     }
     .formularios{
@@ -112,10 +112,17 @@
     }
     nav{
         display: none;
+        
+
     }
     header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1231312321;
         background-color: black;
-        
+        height: 60px;
+
 
     }
     .imgBack img{
@@ -124,7 +131,7 @@
     .habilitado{
         display: block;
         background-color: black;
-        height: 500px;
+        height: 400px;
         animation: lista;
         animation-duration: 1s;
         z-index: 70;
@@ -133,7 +140,7 @@
     .habilitado2{
         display: block;
         background-color: black;
-        height: 500px;
+        height: 400px;
         animation: lista2;
         animation-duration: 1s;
         z-index: 70;
@@ -141,7 +148,7 @@
     }
     @keyframes lista2 {
         0%{
-            height: 500px;
+            height: 400px;
         }
         100%{
             height: 50px;
@@ -152,7 +159,7 @@
     }
 
     .misredes{
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .lista{
         display: flex;
@@ -181,7 +188,7 @@
             height: 50px;
         }
         100%{
-            height: 500px;
+            height: 400px;
         }
     }
     @keyframes menu1 {

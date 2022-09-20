@@ -43,36 +43,37 @@
 }
 .card-img2 img{
     min-height: 140px;
-    width: 300px;
+    width: 200px;
     height: 140px;
 
 }
 .card-img3 img{
     min-height: 140px;
-    width: 300px;
+    width: 200px;
     height: 140px;
 
 }
 .card-img4 img{
     min-height: 140px;
-    width: 300px;
+    width: 200px;
     height: 140px;
 
 }
 .card-img5 img{
     min-height: 140px;
-    width: 300px;
+    width: 200px;
     height: 140px;
 
 }
 .card-img6 img{
     min-height: 140px;
-    width: 300px;
+    width: 200px;
     height: 140px;
 
 }
 
 .card-title h2{
+    margin-top: 10px;
     color: white;
 
 }
