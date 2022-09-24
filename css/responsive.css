@@ -110,21 +110,6 @@
         flex-wrap: wrap;
         z-index: 25;
     }
-    nav{
-        display: none;
-        
-
-    }
-    header{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1231312321;
-        background-color: black;
-        height: 60px;
-
-
-    }
     .imgBack img{
         z-index: 10;
     }

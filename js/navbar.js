@@ -5,6 +5,8 @@ const skil = document.querySelector('.skil')
 const about = document.querySelector('.about')
 const body = document.querySelector('body')
 const opened = document.querySelector('.opened')
+const check = document.querySelector('#check')
+const hola = document.querySelector('#hola')
 
 
 // window.addEventListener('scroll',()=>{
@@ -28,20 +30,11 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-menu.addEventListener('click', ()=>{
-    nav.classList.toggle('habilitado');
-    header.classList.toggle('habilitacion')
-})
-
 body.addEventListener('click',(event)=>{  
-        clienteY = event.clientY;
-        if (clienteY>499) {
-            nav.classList.remove('habilitado')
-            menu.classList.remove('opened')          
-        }
-        
-  
-})  
-
-
-
+    clienteY = event.clientY;
+    if (clienteY>499) {
+       check.checked =false;
+       menu.classList.remove('opened')  ; 
+        console.log(hola)     
+    }
+})
