@@ -123,12 +123,14 @@ a{
 }
 .contact{
     display: flex;
+    width: 500px;
     margin-top:50px ;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin-right: 20px;
 }
 .contact div{
-    margin-left: 50px;
+    margin-left: 20px;
 
 }
 

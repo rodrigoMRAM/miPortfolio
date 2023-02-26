@@ -2,6 +2,9 @@
     .lenguajes img{
         width: 100%;
     }
+    .contact{
+        width: 100%;
+    }
 }
 
 @media all and  (max-width: 750px){
