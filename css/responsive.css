@@ -4,7 +4,6 @@
     }
 }
 
-
 @media all and  (max-width: 750px){
 .container{
     display: flex;
@@ -110,56 +109,15 @@
         flex-wrap: wrap;
         z-index: 25;
     }
-    .imgBack img{
-        z-index: 10;
-    }
-    .habilitado{
-        display: block;
-        background-color: black;
-        height: 400px;
-        animation: lista;
-        animation-duration: 1s;
-        z-index: 70;
-
-    }
-    .habilitado2{
-        display: block;
-        background-color: black;
-        height: 400px;
-        animation: lista2;
-        animation-duration: 1s;
-        z-index: 70;
-
-    }
-    @keyframes lista2 {
-        0%{
-            height: 400px;
-        }
-        100%{
-            height: 50px;
-        }
-    }
-    .contenedorskil{
-        margin-top: 300px;
-    }
 
     .misredes{
         padding-top: 40px;
     }
-    .lista{
-        display: flex;
-        flex-direction: column;
-        padding-top: 20px;
-        margin-bottom: 90px;
-        animation: menu1;
-        animation-duration: 1.3s;
-    }
+
     .miImagen a{
         margin-top: 10px;
     }
-    .lista li{
-        margin-top: 50px;
-    }
+
     .ingresar{
         position: absolute;
         right: 5px;
@@ -191,15 +149,6 @@
 .card{
     width: 100%!important;
 }
-    .skills{
-        display: flex;
-        text-align: center;
-        padding: 40px 0px;
-        border-radius: 20px;
-        flex-direction: column;
-        margin: 0 auto;
-         width: 100%;
-    }
     .container-slide{
         display: flex;
     }
@@ -211,14 +160,9 @@
         width: 100%;
         height: 300px;
     }
-
     .imgCard{
-        
         box-shadow: none;
         background: none;
-
-    
-    
     }
 
 }
