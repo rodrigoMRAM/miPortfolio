@@ -17,12 +17,12 @@ const hola = document.querySelector('#hola')
 
 window.addEventListener('scroll',()=>{
     scrol = parseInt(window.scrollY*0.03);
-    if(innerWidth>600){
+    if(innerWidth>860){
         nav.style.transition = '2s'
         nav.style.backgroundColor = `rgb(255, 255, 255 ,0.${scrol})`
     }else{
         header.style.transition = '2s'
-        header.style.backgroundColor = `rgb(0, 0, 0 ,0.${scrol})`
+        header.style.backgroundColor = `rgb(0, 0, 0 )`
     }
     if(scrol == 0){
         header.style.transition = '3s'

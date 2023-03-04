@@ -227,15 +227,15 @@ h1{
     left: 20px;
     margin-left: 10px;
     margin-top: 10px;
-    height: 60px!important;
-    width: 60px!important;
+    height: 80px!important;
+    width: 80px!important;
     margin-right: 15px;
     border-radius: 50%;
 }
 .datos{
     position: absolute;
     top: 30px;
-    left: 25px;
+    left: 50px;
     width: 250px;
     height: 50px;
     margin-top: 20px;
@@ -305,9 +305,11 @@ h1{
     font-family: 'DM Sans', sans-serif;
     position: absolute;
     top: 90px;
-    left: 98px;
+    left: 120px;
 }
-
+p a{
+    color: #A07BFF
+}
 .skil{
     font-family: Tahoma;
     color: white;
@@ -488,14 +490,12 @@ nav ul{
     margin-right: 10px;
 }
 nav ul li{
-    display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
 nav ul li a{
     color: #fff;
     font-size: 18px;
-    padding: 7px 13px;
     border-radius: 3px;
 }
  li a:hover{
