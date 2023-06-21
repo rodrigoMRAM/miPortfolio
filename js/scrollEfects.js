@@ -45,3 +45,12 @@ new ScrollMagic.Scene({
                 .setClassToggle("#contactame", "visible")
                 .addTo(controller);
 
+new ScrollMagic.Scene({
+                    triggerElement: "#contactx",
+                    offset: 50,											
+                    triggerHook: 0.9,
+                })
+                .setClassToggle("#contactx", "visible")
+                .addTo(controller);
+                
+

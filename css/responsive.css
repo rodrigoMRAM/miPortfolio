@@ -22,6 +22,18 @@
     margin-top: 200px;
     z-index: 60;
 }
+.imgCard1{
+    height: 1300px!important;
+    box-shadow: none;
+    width: 90%!important;
+    background-color: transparent!important;
+}
+.encriptador, .ayuda, .turnero{
+    margin-top: 30px;
+    width: 90%!important;
+    border: 2px solid #fff;
+
+}
 .card-img1 img,.card-img2  img,.card-img3 img,.card-img4 img,.card-img5 img,.card-img6 img{
     min-height: 140px;
     width: 200px;
@@ -176,5 +188,13 @@
         box-shadow: none;
         background: none;
     }
+   
 
+}
+
+
+@media all and  (max-width: 1300px) and (min-width: 750px){
+    .imgCard1{
+        height: 900px!important;
+    }
 }

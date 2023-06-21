@@ -1,0 +1,71 @@
+.imgExperiencias{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.imgExperiencias img{
+    object-fit: cover;
+    object-position: 10pxs;
+    border-radius: 5px;
+    width: 180px;
+    padding-top: 10px;
+    height: 180px;
+}
+h3{
+    color: white;
+}
+.imgContenedor{
+    height: 200px;
+}
+
+.encriptador, .ayuda,.turnero {
+    height: 400px;
+    width: 260px;
+    background-color: #1D1D1B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.textoExperiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1D1D1B;
+    height: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.textoExperiencia h3, .textoExperiencia p{
+    width: 80%;
+    margin: 0 auto;
+}
+.textoExperiencia a{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    color: black;
+    padding: 8px 5px;
+    background-color: #A07BFF;
+}
+.imgCard1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background-color: #363634;
+    margin: 0 auto;
+    height: 600px;
+    z-index: 20;
+    max-width: 900px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+
+
+}
