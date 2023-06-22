@@ -26,13 +26,12 @@
     min-width: 300px;
     margin: 20px 20px;
     border-radius: 10px;
-    background-color: #292b2c;
+    background: rgba(0, 0, 0, 0.2);
 
 }
 
 .card-img{
     border-radius: 10px 10px 0px 0px;
-    background-color: #292b2c;
     min-height: 140px;
 }
 .card-img1 img,.card-img2 img,.card-img3 img,.card-img4 img,.card-img5 img,.card-img6 img{

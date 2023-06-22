@@ -23,7 +23,7 @@ h3{
 .encriptador, .ayuda,.turnero {
     height: 400px;
     width: 260px;
-    background-color: #1D1D1B;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ h3{
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    background-color: #1D1D1B;
+    align-items: center;
     height: 200px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -47,9 +47,10 @@ h3{
 .textoExperiencia a{
     margin: 0 auto;
     text-align: center;
-    width: 80%;
+    width: 70px;
     border-radius: 10px;
-    color: black;
+    color: white;
+    font-weight: bold;
     padding: 8px 5px;
     background-color: #A07BFF;
 }
@@ -59,7 +60,7 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 60%;
-    background-color: #363634;
+    background: rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     height: 600px;
     z-index: 20;

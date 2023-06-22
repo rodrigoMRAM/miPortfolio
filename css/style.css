@@ -13,7 +13,8 @@
     display: none;
 }
 body{
-    background-color: #1D1D1B;
+    background: rgb(125,0,109);
+    background: linear-gradient(90deg, rgba(125,0,109,1) 0%, rgba(2,2,51,1) 49%, rgba(53,0,117,1) 100%);
     flex-direction: column;
 }
 
@@ -23,7 +24,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 60%;
-    background-color: #363634;
+    background: rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     height: 600px;
     z-index: 20;
@@ -105,7 +106,7 @@ a{
     width: 60%;
     height: 400px;
     border-radius: 30px;
-    background-color: #363634;
+    background: rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     max-width: 900px;
     padding-top: 50px;
@@ -187,9 +188,14 @@ footer{
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-    margin-top: -10px;
-    background-color: #A07BFF;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: -3.6px;
 
+}
+
+.rodrigomaciel{
+    background: rgba(0, 0, 0, 0.2);
 }
 .contacto p{
     font-family: Manrope;
@@ -499,11 +505,11 @@ nav{
     position: fixed;
     display: flex;
     justify-content: center;
-    background: black;
     height: 80px;
     width: 100%;
     z-index: 3000;
     font-family: Antonio;
+    transition: background-color 0.5s ease;
 }
 .enlace{
     position: absolute;
@@ -516,7 +522,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+
 }
 .misredes{
     display: flex;
@@ -536,7 +542,7 @@ nav ul li a{
     border-radius: 3px;
 }
  li a:hover{
-    background: #A07BFF;
+    background: rgba(0, 0, 0, 0.3);
     transition: .5s;
 }
 .checkbtn{
@@ -609,7 +615,7 @@ section{
         color: red;
     }
     #check:checked ~ ul{
-        top:80px;
+        top:0px;
     }
 
       .menu {
@@ -664,3 +670,79 @@ section{
     -webkit-box-shadow: 4px 2px 14px -1px rgba(255,255,255,0.57);
     -moz-box-shadow: 4px 2px 14px -1px rgba(255,255,255,0.57);
 }
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 0 a;
+    background-color: #A07BFF;
+    border-radius: 10px;
+}
+
+.minigit{
+    object-fit: contain!important;
+    width: 28px!important;
+    height: 28px!important;
+}
+.gitpad{
+    margin-right: 10px!important;
+}
+.linkss{
+    display: flex;
+}
+.padding{
+    margin-right: 10px;
+}
+
+
+.efectohover, .efectonro1, .efectonro2 {
+   
+        width: 100%;
+        height: 80%;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      
+  }
+  .encriptador:hover .efectohover, .ayuda:hover .efectonro1, .turnero:hover .efectonro2 {
+    opacity: 1;
+  }
+  .encriptador,.ayuda, .turnero  {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  .djangologo{
+    border-radius: 50%!important;
+    width: 40px!important;
+    height: 40px!important;
+    padding: 0!important;
+  }
+
+  .phfotos{
+    margin-top: 10px;
+  }
+.efectohover p, .efectonro1 p, .efectonro2 p{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.navbar-transparent {
+    background-color: transparent;
+  }
+  
+  .navbar-black {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
