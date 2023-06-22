@@ -541,10 +541,32 @@ nav ul li a{
     padding: 0 10px;
     border-radius: 3px;
 }
- li a:hover{
-    background: rgba(0, 0, 0, 0.3);
-    transition: .5s;
+li a {
+    display: inline-block;
+  position: relative;
 }
+ li a:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    animation: hola 0.3s forwards;
+}
+@keyframes hola {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+    
+
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -612,7 +634,7 @@ section{
     }
     li a:hover{
         background: none;
-        color: red;
+        color: #A07BFF;
     }
     #check:checked ~ ul{
         top:0px;

@@ -43,11 +43,11 @@ window.addEventListener('scroll', function() {
 //     }
 // })
 
-// body.addEventListener('click',(event)=>{  
-//     clienteY = event.clientY;
-//     if (clienteY>499) {
-//        check.checked =false;
-//        menu.classList.remove('opened')  ; 
-//         console.log(hola)     
-//     }
-// })
+body.addEventListener('click',(event)=>{  
+    clienteY = event.clientY;
+    if (clienteY>590) {
+       check.checked =false;
+       menu.classList.remove('opened')  ; 
+        console.log(hola)     
+    }
+})

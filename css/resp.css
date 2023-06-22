@@ -23,7 +23,11 @@ nav ul li a{
 }
 li a:hover, li a.active{
     background: none;
-    color: red;
+    color: A07BFF;
+    animation: none;
+}
+li a:hover::after{
+    animation: none;
 }
 #check:checked ~ ul{
     top:80px;
