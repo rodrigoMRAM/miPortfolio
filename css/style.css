@@ -702,6 +702,9 @@ section{
     background-color: #A07BFF;
     border-radius: 10px;
 }
+.links img{
+    padding-bottom:2px ;
+}
 
 .minigit{
     object-fit: contain!important;
@@ -768,3 +771,59 @@ section{
   .navbar-black {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+
+.en{
+    color: white;
+}
+
+.es{
+    color: white;
+}
+
+.language{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+.check{
+    position: relative;
+    width: 50px;
+    appearance: none;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: rgba(2,2,51,1) ;
+    border-radius: 10px;
+}
+
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #A07BFF;
+    border-radius: 25px;
+    transition: 0.25s;
+    border:2px solid #333;
+    box-sizing: border-box;
+}
+
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid white;
+
+
+}
+
+.check:checked:before{
+    background-color: rgba(53,0,117,1);
+}
