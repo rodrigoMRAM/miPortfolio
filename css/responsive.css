@@ -16,11 +16,18 @@
 }
 
 
-@media all and  (max-width: 750px){
+@media all and  (max-width: 900px){
 .container{
     display: flex;
-    margin-top: 200px;
+    margin-top: 20px;
     z-index: 60;
+}
+.rodrigo{
+    left: -60px;
+}
+.imagen h1{
+    bottom: -255px;
+    left: -0px;
 }
 .imgCard1{
     height: 1300px!important;
@@ -42,17 +49,19 @@
 }
 .separador{
     width: 276px;
+    bottom: -250px;
 }
 .p3{
-    position: absolute;
+    position: relative;
     left: 20px;
-    top: 120px;
+    top:-220px;
     width: 50px;
 }
 .datos{
-    position: absolute;
+    position: relative;
     width: 200px;
     left: 80px;
+    top: -250px;
 }
 
 
@@ -137,6 +146,18 @@
     .misredes{
         padding-top: 40px;
     }
+    .red{
+        left: -55px;
+        bottom: -270px;
+    }
+    .red1{
+        bottom: -270px;
+        left: -40px;
+    }
+    .red2{
+        bottom: -270px;
+        left: -25px;
+    }
 
     .miImagen a{
         margin-top: 10px;
@@ -193,8 +214,8 @@
 }
 
 
-@media all and  (max-width: 1300px) and (min-width: 750px){
+/* @media all and  (max-width: 1300px) and (min-width: 750px){
     .imgCard1{
         height: 900px!important;
     }
-}
+} */

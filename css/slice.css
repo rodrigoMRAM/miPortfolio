@@ -62,9 +62,9 @@ h3{
     width: 60%;
     background: rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    height: 600px;
     z-index: 20;
     max-width: 900px;
+    padding: 50px;
     border-radius: 20px;
     margin-bottom: 200px;
 
