@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/slice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto&display=swap" rel="stylesheet">
     <meta property="og:title" content="Rodrigo Maciel CV" />
     <meta property="og:type" content="Portfolio  - portafolio" />
     <meta property="og:url" content="https://rodrigomram.github.io/miPortfolio/">
@@ -25,9 +28,9 @@
                 <input class="check" type="checkbox" name="" id="">
                 <span class="en">Inglés</span>
             </div>
-            <input type="checkbox" id="check">
+            <input type="checkbox" id="check" class="checa">
             <label for="check" class="checkbtn">
-                <i class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <i class="menu menu2" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                 <svg width="60" height="60" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -37,12 +40,12 @@
                 </svg>
             </i>
             </label>
-            <ul>
+            <ul class="fnx">
                 <li><a href="js/currículum profesional  monocromático verde .pdf" class="active" id="enlace" >Mi CV</a></li>
-                <li><a href="#skil">Habilidades</a></li>
-                <li><a href="#about">Mis datos</a></li>
-                <li><a href="#contactame">Experiencias</a></li>
-                <li><a href="#formularios">Contacto</a></li>
+                <li><a class="unroll" href="#skil">Habilidades</a></li>
+                <li><a class="unroll" href="#about">Mis datos</a></li>
+                <li><a class="unroll" href="#contactame">Experiencias</a></li>
+                <li><a class="unroll" href="#formularios">Contacto</a></li>
                 <div class="misredes">
                     <a href="https://github.com/rodrigoMRAM" target="_blank"><img class="redes" src="img/git.png" alt=""></a>
                     <a class="aimagen" href="https://www.linkedin.com/in/rodrigo-alberto-maciel-15673b243/" target="_blank"><img
@@ -303,6 +306,7 @@
         </div>
     </footer>
     <script src="js/change.js"></script>
+    <script src="js/navbarUnroll.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/debug.addIndicators.min.js"></script>
     <script src="js/typewritter.js"></script>

@@ -1,4 +1,3 @@
-const header = document.querySelector('header');
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('nav');
 const skil = document.querySelector('.skil')
@@ -48,6 +47,6 @@ body.addEventListener('click',(event)=>{
     if (clienteY>590) {
        check.checked =false;
        menu.classList.remove('opened')  ; 
-        console.log(hola)     
+    
     }
 })
