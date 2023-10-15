@@ -26,7 +26,7 @@
     left: -60px;
 }
 .imagen h1{
-    bottom: -338px;
+    bottom: -260px;
     left: -0px;
 }
 .imgCard1{
@@ -50,19 +50,19 @@
 }
 .separador{
     width: 276px;
-    bottom: -330px;
+    bottom: -250px;
 }
 .p3{
     position: relative;
     left: 20px;
-    top:-170px;
+    top:-220px;
     width: 50px;
 }
 .datos{
     position: relative;
     width: 200px;
     left: 80px;
-    top: -190px;
+    top: -250px;
 }
 
 
@@ -149,14 +149,14 @@
     }
     .red{
         left: -55px;
-        bottom: -350px;
+        bottom: -280px;
     }
     .red1{
-        bottom: -350px;
+        bottom: -280px;
         left: -40px;
     }
     .red2{
-        bottom: -350px;
+        bottom: -280px;
         left: -25px;
     }
 
