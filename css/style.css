@@ -841,7 +841,7 @@ section{
     top : -100%!important;
 }
 
-#miVideo, #miVideo2, #miVideo3{
+#miVideo, #miVideo2, #miVideo1{
     position: absolute;
     display: none;
 }
