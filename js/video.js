@@ -40,14 +40,14 @@ efectonro1.addEventListener("mouseleave", function() {
 efectonro2.addEventListener("mouseleave", function() {
   video1.style.display ="none"
     textoExperiencia2.style.filter = "blur(0px)"
-    textoExperiencia1.style.zIndex = "1"
+    textoExperiencia2.style.zIndex = "1"
     video1.pause();
   });
 
 
   efectonro3.addEventListener("mouseenter", function() {
     video2.style.display ="block"
-    textoExperiencia3.style.filter = "blur(10px contrast(150%))"
+    textoExperiencia3.style.filter = "blur(10px)"
     textoExperiencia3.style.zIndex = "-10"
     video2.play();
 });
