@@ -45,6 +45,7 @@ h3{
 .textoExperiencia h3, .textoExperiencia p{
     width: 80%;
     margin: 0 auto;
+    color: white;
 }
 .textoExperiencia a{
     margin: 0 auto;
