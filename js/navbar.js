@@ -43,7 +43,8 @@ window.addEventListener('scroll', function() {
 // })
 
 body.addEventListener('click',(event)=>{  
-    clienteY = event.clientY;
+    const clienteY = event.clientY;
+    // console.log(clienteY)
     if (clienteY>590) {
        check.checked =false;
        menu.classList.remove('opened')  ; 
