@@ -8,6 +8,25 @@ const contraer  = document.querySelector('.contraer')
 const nuevoNumero  =  0
 const nuevaFrase =  ""
 
+
+//FUNCION ESCONDER WHATSAPP
+function HideWhatsapp() {
+    formulario.style.transition = "all 0.3s"
+    formulario.style.right = "-300px"
+  }
+
+
+
+  // Detectar clic fuera del elemento para esconder WHATSAPP 
+  document.addEventListener('click', function(event) {
+    if(!formulario.contains(event.target) && !whatsapp.contains(event.target)){
+        HideWhatsapp()
+    }
+  });
+
+
+
+// EVENTO APARECER WHATSAPP
 whatsapp.addEventListener('click',()=>{
     whatsapp.classList.toggle('ocultar')
     // formulario.classList.toggle('ocultar')
@@ -17,32 +36,7 @@ whatsapp.addEventListener('click',()=>{
 
 })
 
-
-body.addEventListener('click',(event)=>{  
-    const clienteY = event.clientY;
-    // console.log("cliente x: " ,event.clientX)
-    // console.log(event)
-    if (clienteY>0 && clienteY<=500) {
-        whatsapp.classList.toggle('ocultar')
-        formulario.style.transition = "all 0.3s"
-    formulario.style.right = "-300px"
-    
-    }
-})
-
-
-// body.addEventListener('click',(event)=>{  
-//     const clienteX = event.clientX;
-//     const clienteResta = clienteX -300
-//     console.log(clienteResta)
-//     if (clienteX < clienteResta) {
-//         whatsapp.classList.toggle('ocultar')
-//         formulario.style.transition = "all 0.3s"
-//     formulario.style.right = "-300px"
-    
-//     }
-// })
-
+//BOTON ESCONDER WHATSAPP
 contraer.addEventListener('click',()=>{
     whatsapp.classList.toggle('ocultar')
     formulario.style.transition = "all 0.3s"
@@ -58,7 +52,7 @@ frase.addEventListener('click',()=>{
 })
 
 
-
+// FUNCION PARA REDIRIGIR A WHATSAPP
 submit.addEventListener('click',(e)=>{
     e.preventDefault()
     const nuevaFrase = frase.value
