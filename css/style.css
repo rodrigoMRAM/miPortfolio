@@ -678,18 +678,20 @@ section{
   }
   
   .navbar-black {
-    background-color: rgba(255,255,255,0.15);
-    /* box-shadow: 1px 1px 14px -1px rgba(255,255,255,0.57); */
+    background-color: rgb(0,0,0);
+    box-shadow: 1px 1px 14px -1px rgba(255,255,255,0.2);
     
   }
 
 
 .en{
     color: white;
+    margin-left: 5px;
 }
 
 .es{
     color: white;
+    margin-right: 5px;
 }
 
 .language{

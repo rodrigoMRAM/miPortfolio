@@ -1,10 +1,11 @@
 const frase = document.querySelector('#frase')
 const numero = document.querySelector('#numero')
 const submit = document.querySelector('#enviar')
+const submit2 = document.querySelector('#enviar')
 const clickTextArea  = document.querySelector('.clickTextArea')
 const whatsapp  = document.querySelector('.whatsapp')
 const formulario  = document.querySelector('.formulario')
-const contraer  = document.querySelector('.contraer')
+const contraer  = document.querySelector('.whatsapp_top')
 const nuevoNumero  =  0
 const nuevaFrase =  ""
 
@@ -14,6 +15,15 @@ function HideWhatsapp() {
     formulario.style.transition = "all 0.3s"
     formulario.style.right = "-300px"
   }
+
+
+  frase.addEventListener("keydown", (event) => {
+    console.log("first")
+    if (event.key === "Enter") {
+        event.preventDefault(); // Evita el salto de línea en caso de usar textarea
+        submit2.click(); // Simula el clic en el botón de enviar
+    }
+    })
 
 
 
