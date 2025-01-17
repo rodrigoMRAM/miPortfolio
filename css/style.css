@@ -98,7 +98,7 @@ a{
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 14px -1px rgba(255,255,255,0.57);
     margin-bottom: 20px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 .formularios h2{
     text-align: center;
@@ -243,6 +243,7 @@ p a{
 .divslide{
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
 }
 .container-slide{
     display: flex;
@@ -752,7 +753,7 @@ section{
     margin: 0 auto;
     /* height: 600px; */
     z-index: 20;
-    max-width: 900px;
+    max-width: 1000px;
     border-radius: 20px;
     padding: 70px;
     box-shadow: 1px 1px 14px -1px rgba(255,255,255,0.57);

@@ -37,11 +37,15 @@
     background-color: transparent!important;
     box-shadow: none!important;
 }
-.encriptador, .ayuda, .turnero,.otto, .trello,.codebar{
+.encriptador, .turnero,.otto, .trello,.codebar{
     margin-top: 30px;
     width: 90%!important;
     border: 2px solid #fff;
 
+}
+.ayuda{
+    width: 90%!important;
+    border: 2px solid #fff;
 }
 .card-img1 img,.card-img2  img,.card-img3 img,.card-img4 img,.card-img5 img,.card-img6 img{
     min-height: 140px;
@@ -137,7 +141,9 @@
     
     }
     .formularios{
-        width:100%;
+        box-shadow: none;
+        background: none;
+        padding: 0;
     }
     .welcome{
         display: flex;
@@ -210,6 +216,7 @@
     .imgCard{
         box-shadow: none;
         background: none;
+        padding: 0;
     }
    
 
