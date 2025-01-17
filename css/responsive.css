@@ -144,6 +144,7 @@
         box-shadow: none;
         background: none;
         padding: 0;
+        width: 100%;
     }
     .welcome{
         display: flex;
